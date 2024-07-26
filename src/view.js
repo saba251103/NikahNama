@@ -5,7 +5,6 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/database';
 import { Box } from '@mui/material';
 
-
 export default function ViewDetails() {
   const { id } = useParams();
   const [certificate, setCertificate] = useState(null);
@@ -43,7 +42,6 @@ export default function ViewDetails() {
 
   // Debugging: Log the certificate object to inspect its structure
   console.log('Certificate Data:', certificate);
-
 
   return (
     <Card id="certificate" className="App">
@@ -97,7 +95,7 @@ export default function ViewDetails() {
           <h3>مقام نکاح</h3>&nbsp;&nbsp;&nbsp;&nbsp;
         </Box>
         <Box sx={{ display: 'flex', alignItems: 'center', marginTop: 1, marginLeft: 4 }}>
-          <label>Address</label>
+          <label>Address</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <TextField
             id="addressgroom"
             variant="outlined"
@@ -108,7 +106,7 @@ export default function ViewDetails() {
           <h3>دولہا کا نام</h3>&nbsp;&nbsp;&nbsp;&nbsp;
         </Box>
         <Box sx={{ display: 'flex', alignItems: 'center', marginTop: 1, marginLeft: 4 }}>
-        <label>Date of Nikah</label>
+          <label>Date of Nikah</label>&nbsp;&nbsp;
           <TextField
             id="datenikah"
             variant="outlined"
@@ -116,8 +114,8 @@ export default function ViewDetails() {
             disabled
             sx={{ width: 350, marginRight: 2, marginTop: 3, marginLeft: 2 }}
           />
-          <h3>تاریخ نکاح</h3>&nbsp
-          <label>Islamic Date :</label>
+          <h3>تاریخ نکاح</h3>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label>Islamic Date :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <TextField
             id="islamicdate"
             variant="outlined"
@@ -125,7 +123,7 @@ export default function ViewDetails() {
             disabled
             sx={{ width: 350, marginRight: 2, marginTop: 3, marginLeft: 2}}
           />
-          <h3>هجری تاریخ</h3>&nbsp;&nbsp;&nbsp;&nbsp;
+          <h3>هجری تاریخ</h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </Box>
       </Card>
 
@@ -144,7 +142,7 @@ export default function ViewDetails() {
           <h3>دولہا کا نام</h3>&nbsp;&nbsp;
         </Box>
         <Box sx={{ display: 'flex', alignItems: 'center', marginTop: 1, marginLeft: 4 }}>
-          <label>Address</label>
+          <label>Address</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <TextField
             id="addressgroom"
             variant="outlined"
@@ -155,7 +153,7 @@ export default function ViewDetails() {
           <h3>دولہا کا نام</h3>&nbsp;&nbsp;&nbsp;&nbsp;
         </Box>
         <Box sx={{ display: 'flex', alignItems: 'center', marginTop: 1, marginLeft: 4 }}>
-          <label>Date of Birth</label>
+          <label>Date of Birth</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <TextField
             id="dateofbirthg"
             variant="outlined"
@@ -190,7 +188,7 @@ export default function ViewDetails() {
           <h3>دولہن کا نام</h3>&nbsp;&nbsp;&nbsp;&nbsp;
         </Box>
         <Box sx={{ display: 'flex', alignItems: 'center', marginTop: 1, marginLeft: 4 }}>
-          <label>Address</label>
+          <label>Address</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <TextField
             id="addressbride"
             variant="outlined"
@@ -201,7 +199,7 @@ export default function ViewDetails() {
           <h3>دولہا کا نام</h3>&nbsp;&nbsp;&nbsp;&nbsp;
         </Box>
         <Box sx={{ display: 'flex', alignItems: 'center', marginTop: 1, marginLeft: 4 }}>
-          <label>Date of Birth</label>
+          <label>Date of Birth</label>&nbsp;&nbsp;&nbsp;&nbsp;
           <TextField
             id="dateofbirthb"
             variant="outlined"
@@ -223,9 +221,9 @@ export default function ViewDetails() {
 
       <br />
 
-      <Card sx={{ width: 1250, height: 200, marginLeft: 8 }}>
+      <Card sx={{ width: 1250, height: 300, marginLeft: 8 }}>
         <Box sx={{ display: 'flex', alignItems: 'center', marginTop: 1, marginLeft: 4 }}>
-        <label>Meher</label>
+          <label>Meher</label>
           <TextField
             id="meher"
             variant="outlined"
@@ -234,7 +232,9 @@ export default function ViewDetails() {
             sx={{ width: 1050, marginRight: 5, marginTop: 3, marginLeft: 2 }}
           />
           <h3>مہر</h3>&nbsp;&nbsp;&nbsp;&nbsp;
-          <label>Vali</label>
+        </Box>
+        <Box sx={{ display: 'flex', alignItems: 'center', marginTop: 1, marginLeft: 4 }}>
+          <label>Vali</label>&nbsp;&nbsp;&nbsp;&nbsp;
           <TextField
             id="vali"
             variant="outlined"
@@ -245,7 +245,7 @@ export default function ViewDetails() {
           <h3>ولی</h3>&nbsp;&nbsp;&nbsp;&nbsp;
         </Box>
         <Box sx={{ display: 'flex', alignItems: 'center', marginTop: 1, marginLeft: 4 }}>
-          <label>Vakil</label>
+          <label>Vakil</label>&nbsp;&nbsp;
           <TextField
             id="vakil"
             variant="outlined"
@@ -256,9 +256,7 @@ export default function ViewDetails() {
           <h3>وکیل</h3>&nbsp;&nbsp;&nbsp;&nbsp;
         </Box>
       </Card>
-
       <br />
-
       <Card sx={{ width: 1250, height: 200, marginLeft: 8 }}>
         <Box sx={{ display: 'flex', alignItems: 'center', marginTop: 1, marginLeft: 4 }}>
           <label>Witness 1</label>
@@ -285,12 +283,6 @@ export default function ViewDetails() {
       </Card>
 
       <br />
-
-      <Card sx={{ width: 1250, height: 100, marginLeft: 8 }}>
-        <Box sx={{ display: 'flex', alignItems: 'center', marginTop: 1, marginLeft: 4 }}>
-
-        </Box>
-      </Card>
     </Card>
   );
 }

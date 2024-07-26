@@ -124,18 +124,16 @@ const firebaseConfig = {
           <TextField id="date" label="Date (dd-mm-yyyy)" variant="outlined" value={date} onChange={(e) => setDate(e.target.value)} sx={{width: 350, marginRight: 5,marginTop: 3}} />
         </Card>
         <br></br>
-        <Card sx={{ width: 1250, height: 350, marginLeft: 8 }}>
+        <Card sx={{ width: 1250, height: 200, marginLeft: 8 }}>
         <Box sx={{ display: 'flex', alignItems: 'center',marginTop: 1,marginLeft: 4  }}>
         <label >Place of Nikah</label>
           <TextField id="placenikah"  variant="outlined" value={placenikah} onChange={(e) => setPlaceNikah(e.target.value)} sx={{width: 950, marginRight: 5,marginTop: 3, marginLeft: 2}} />    <h3>
          مقام نکاح </h3>
         </Box>
         <Box sx={{ display: 'flex', alignItems: 'center',marginTop: 1,marginLeft: 4 }}>          
-        <label >Date of Nikah</label>
+        <label >Date of Nikah</label>&nbsp;&nbsp; 
           <TextField id="datenikah"  value={datenikah} onChange={(e) => setDateNikah(e.target.value)}variant="outlined"  sx={{width: 350, marginRight: 2,marginTop: 3, marginLeft: 2}} />    <h3>
-          تاریخ نکاح </h3>
-        </Box>
-        <Box sx={{display: 'flex', alignItems: 'center',marginTop: 1,marginLeft: 4 }}>
+          تاریخ نکاح </h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
         <label >Islamic Date :</label>
         <TextField id="islamicdate"  variant="outlined" value={islamicdate} onChange={(e) => setIslamicDate(e.target.value)} sx={{width: 350, marginRight: 2,marginTop: 3, marginLeft: 2}} />    <h3>
         هجری تاریخ</h3>
@@ -154,10 +152,11 @@ const firebaseConfig = {
           دولہا کا نام</h3>
         </Box>
         <Box sx={{ display: 'flex', alignItems: 'center',marginTop: 1,marginLeft: 4 }}>          
-        <label >Date of Birth &nbsp;&nbsp;&nbsp;</label>
+        <label >Date of Birth &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
           <TextField id="dateofbirthg"  variant="outlined" value={dateofbirthg} onChange={(e) => setDobG(e.target.value)} sx={{width: 350, marginRight: 2,marginTop: 3, marginLeft: 2}} />    <h3>
           تاریخ پیدائش</h3>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       <label >Groom Sign &nbsp;&nbsp;&nbsp;</label>
+          &nbsp;&nbsp;&nbsp;&nbsp;     
+          <label >Groom Sign &nbsp;&nbsp;&nbsp;</label>
         <TextField id="groomsign"  variant="outlined"  sx={{width: 350, marginRight: 2,marginTop: 3, marginLeft: 2}} />    <h3>
         دستخط دولها</h3>
         </Box>
@@ -175,31 +174,67 @@ const firebaseConfig = {
           دولہا کا نام</h3>
         </Box>
         <Box sx={{ display: 'flex', alignItems: 'center',marginTop: 1,marginLeft: 4 }}>          
-        <label >Date of Birth &nbsp;&nbsp;&nbsp;</label>
+        <label >Date of Birth &nbsp; </label>
           <TextField id="dateofbirthb"  variant="outlined" value={dateofbirthb} onChange={(e) => setDobB(e.target.value)} sx={{width: 350, marginRight: 2,marginTop: 3, marginLeft: 2}} />  <h3>  
           تاریخ پیدائش </h3>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label >Bride Sign &nbsp;&nbsp;&nbsp;</label>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <label >Bride Sign &nbsp;&nbsp;&nbsp;</label>
         <TextField id="bridesign"  variant="outlined"  sx={{width: 350, marginRight: 2,marginTop: 3, marginLeft: 2}} />  <h3>  
         دستخط دلهن</h3>
         </Box>
         </Card>
 <br></br>
-        <Card sx={{ width: 1250, height: 200, marginLeft: 8 }}>
-        <Box sx={{ display: 'flex', alignItems: 'center',marginTop: 1,marginLeft: 4  }}>
-        <label >Vali</label>
-          <TextField id="vali"  variant="outlined" value={vali} onChange={(e) => setVali(e.target.value)} sx={{width: 550, marginRight: 5,marginTop: 3, marginLeft: 2}} />    
-        <label>Sign &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
-        <TextField id="" label="" variant="outlined"  sx={{width: 300, marginRight: 5,marginTop: 3, marginLeft: 2}} />    <h3>
-        دستخط ولی</h3>
-        </Box>
-        <Box sx={{ display: 'flex', alignItems: 'center',marginTop: 1,marginLeft: 4  }}>
-        <label >Vakil</label>
-          <TextField id="vakil"  variant="outlined" value={vakil} onChange={(e) => setVakil(e.target.value)} sx={{width: 550, marginRight: 5,marginTop: 3, marginLeft: 2}} />    
-        <label> Vakil Sign</label>
-        <TextField id="" label= "" variant="outlined"  sx={{width: 300, marginRight: 5,marginTop: 3, marginLeft: 2}} />    <h3>
-        دستخط وکیل</h3>
-         </Box>
-        </Card>
+<Card sx={{ width: 1250, height: 300, marginLeft: 8 }}>
+  <Box sx={{ display: 'flex', alignItems: 'center', marginTop: 1, marginLeft: 4 }}>
+    <label>Meher</label>
+    <TextField
+      id="meher"
+      variant="outlined"
+      value={meher}
+      onChange={(e) => setMeher(e.target.value)}
+      sx={{ width: 950, marginRight: 5, marginTop: 3, marginLeft: 2 }}
+    />
+    <h3>مہر</h3>
+  </Box>
+  <Box sx={{ display: 'flex', alignItems: 'center', marginTop: 1, marginLeft: 4 }} >
+  <br/>
+  <label>Vali</label> &nbsp;&nbsp;&nbsp;&nbsp;
+  <TextField
+    id="vali"
+    variant="outlined"
+    value={vali}
+    onChange={(e) => setVali(e.target.value)}
+    sx={{ width: 550, marginRight: 5, marginTop: 3, marginLeft: 2 }}
+  />
+  <label>Sign</label>
+  <TextField
+    id=""
+    label=""
+    variant="outlined"
+    sx={{ width: 300, marginRight: 5, marginTop: 3, marginLeft: 2 }}
+  />
+  <h3>دستخط ولی</h3>
+  </Box>
+  <Box sx={{ display: 'flex', alignItems: 'center', marginTop: 1, marginLeft: 4 }}>
+    <label>Vakil</label> &nbsp;&nbsp;&nbsp;
+    <TextField
+      id="vakil"
+      variant="outlined"
+      value={vakil}
+      onChange={(e) => setVakil(e.target.value)}
+      sx={{ width: 550, marginRight: 5, marginTop: 3, marginLeft: 2 }}
+    />
+    <label>Vakil Sign</label>
+    <TextField
+      id=""
+      label=""
+      variant="outlined"
+      sx={{ width: 300, marginRight: 5, marginTop: 3, marginLeft: 2 }}
+    />
+    <h3>دستخط وکیل</h3>
+  </Box>
+</Card>
+
         <br></br>
         <Card sx={{ width: 1250, height: 200, marginLeft: 8 }}>
         <Box sx={{ display: 'flex', alignItems: 'center',marginTop: 1,marginLeft: 4  }}>
@@ -216,15 +251,6 @@ const firebaseConfig = {
         <TextField id="" label= " " variant="outlined"  sx={{width: 300, marginRight: 5,marginTop: 3, marginLeft: 2}} />  <h3>  
         دستخط گواه (2)</h3>
          </Box>
-        </Card>
-        <br></br>
-        <Card sx={{ width: 1250, height: 150, marginLeft: 8 }}>
-        <Box sx={{ display: 'flex', alignItems: 'center',marginTop: 1,marginLeft: 4  }}>
-        <label >Meher </label>
-          <TextField id="meher" variant="outlined" value={meher} onChange={(e) => setMeher(e.target.value)} sx={{width: 950, marginRight: 5,marginTop: 3, marginLeft: 2}} />    
-         <h3> مہر
-            </h3>
-          </Box>
         </Card>
         <br></br>
         <Card sx={{ width: 1250, height: 200, marginLeft: 8 }}>
