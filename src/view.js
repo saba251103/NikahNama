@@ -84,7 +84,7 @@ export default function ViewDetails() {
 
       <br />
 
-      <Card sx={{ width: 1250, height: 350, marginLeft: 8 }}>
+      <Card sx={{ width: 1250, height: 300, marginLeft: 8 }}>
         <Box sx={{ display: 'flex', alignItems: 'center', marginTop: 1, marginLeft: 4 }}>
           <label>Place of Nikah</label>
           <TextField
@@ -97,7 +97,18 @@ export default function ViewDetails() {
           <h3>مقام نکاح</h3>&nbsp;&nbsp;&nbsp;&nbsp;
         </Box>
         <Box sx={{ display: 'flex', alignItems: 'center', marginTop: 1, marginLeft: 4 }}>
-          <label>Date of Nikah</label>
+          <label>Address</label>
+          <TextField
+            id="addressgroom"
+            variant="outlined"
+            value={certificate.addressGroom || ''}
+            disabled
+            sx={{ width: 950, marginRight: 5, marginTop: 3, marginLeft: 2 }}
+          />
+          <h3>دولہا کا نام</h3>&nbsp;&nbsp;&nbsp;&nbsp;
+        </Box>
+        <Box sx={{ display: 'flex', alignItems: 'center', marginTop: 1, marginLeft: 4 }}>
+        <label>Date of Nikah</label>
           <TextField
             id="datenikah"
             variant="outlined"
@@ -105,16 +116,14 @@ export default function ViewDetails() {
             disabled
             sx={{ width: 350, marginRight: 2, marginTop: 3, marginLeft: 2 }}
           />
-          <h3>تاریخ نکاح</h3>&nbsp;&nbsp;&nbsp;&nbsp;
-        </Box>
-        <Box sx={{ display: 'flex', alignItems: 'center', marginTop: 1, marginLeft: 4 }}>
+          <h3>تاریخ نکاح</h3>&nbsp
           <label>Islamic Date :</label>
           <TextField
             id="islamicdate"
             variant="outlined"
             value={certificate.islamicDate || ''}
             disabled
-            sx={{ width: 350, marginRight: 2, marginTop: 3, marginLeft: 2 }}
+            sx={{ width: 350, marginRight: 2, marginTop: 3, marginLeft: 2}}
           />
           <h3>هجری تاریخ</h3>&nbsp;&nbsp;&nbsp;&nbsp;
         </Box>
@@ -216,6 +225,15 @@ export default function ViewDetails() {
 
       <Card sx={{ width: 1250, height: 200, marginLeft: 8 }}>
         <Box sx={{ display: 'flex', alignItems: 'center', marginTop: 1, marginLeft: 4 }}>
+        <label>Meher</label>
+          <TextField
+            id="meher"
+            variant="outlined"
+            value={certificate.meher || ''}
+            disabled
+            sx={{ width: 1050, marginRight: 5, marginTop: 3, marginLeft: 2 }}
+          />
+          <h3>مہر</h3>&nbsp;&nbsp;&nbsp;&nbsp;
           <label>Vali</label>
           <TextField
             id="vali"
@@ -270,15 +288,7 @@ export default function ViewDetails() {
 
       <Card sx={{ width: 1250, height: 100, marginLeft: 8 }}>
         <Box sx={{ display: 'flex', alignItems: 'center', marginTop: 1, marginLeft: 4 }}>
-          <label>Meher</label>
-          <TextField
-            id="meher"
-            variant="outlined"
-            value={certificate.meher || ''}
-            disabled
-            sx={{ width: 1050, marginRight: 5, marginTop: 3, marginLeft: 2 }}
-          />
-          <h3>مہر</h3>&nbsp;&nbsp;&nbsp;&nbsp;
+
         </Box>
       </Card>
     </Card>
