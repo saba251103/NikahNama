@@ -9,7 +9,7 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/database';
-import background from './background.png';
+import background from './background4.png';
 import { useNavigate } from 'react-router-dom';
 
 const StyledPaper = styled(Paper)(({ theme }) => ({
